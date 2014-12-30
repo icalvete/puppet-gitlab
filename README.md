@@ -2,7 +2,7 @@
 
 Puppet manifest to install and configure gitlab
 
-[![Build Status](https://secure.travis-ci.org/icalvete/gitlab.png)](http://travis-ci.org/icalvete/puppet-gitlab)
+[![Build Status](https://secure.travis-ci.org/icalvete/puppet-gitlab.png)](http://travis-ci.org/icalvete/puppet-gitlab)
 
 See [gitlab site](https://about.gitlab.com/)
 
