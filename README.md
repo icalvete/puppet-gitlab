@@ -9,7 +9,7 @@ See [gitlab site](https://about.gitlab.com/)
 
 ## Requisites
 
-Only tested in ubuntu 14.04 LTS (trusty) for osfamily = Debian
+Only tested in ubuntu 14.04 LTS (trusty)
 
 ##Example:
 
