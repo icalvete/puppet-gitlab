@@ -11,6 +11,12 @@ See [gitlab site](https://about.gitlab.com/)
 
 Only tested in ubuntu 14.04 LTS (trusty)
 
+If s3_backup is setted to true...
+
+* [hiera](http://docs.puppetlabs.com/hiera/1/index.html)
+* https://github.com/pmblanco/puppet-s3cmd
+
+
 ##Example:
 
 ```puppet
@@ -26,7 +32,8 @@ node /ubuntu01.smartpurposes.net/ inherits test_defaults {
     ldap_suffix  => 'dc=smartpurposes,dc=net',
     ssl          => true,
     ssl_crt      => 'puppet:///modules/roles/gitlab/cert/gitlab.crt',
-    ssl_key      => 'puppet:///modules/roles/gitlab/cert/gitlab.key'
+    ssl_key      => 'puppet:///modules/roles/gitlab/cert/gitlab.key',
+    s3_backup    => true
   }
 }
 ```
