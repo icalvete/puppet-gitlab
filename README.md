@@ -11,12 +11,6 @@ See [gitlab site](https://about.gitlab.com/)
 
 Only tested in ubuntu 14.04 LTS (trusty)
 
-If s3_backup is setted to true...
-
-* [hiera](http://docs.puppetlabs.com/hiera/1/index.html)
-* https://github.com/pmblanco/puppet-s3cmd
-
-
 ##Example:
 
 ```puppet

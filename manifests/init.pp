@@ -10,7 +10,6 @@ class gitlab (
   $ssl          = false,
   $ssl_crt      = undef,
   $ssl_key      = udef,
-  $s3_backup    = false
 
 ) inherits gitlab::params {
 
@@ -54,12 +53,6 @@ class gitlab (
   }
   class {'gitlab::config':
     require => Class['gitlab::install']
-  }
-  if $s3_backup {
-    class {'gitlab::backup':
-      require => Class['gitlab::config'],
-      before  => Anchor['gitlab::end']
-    }
   }
   anchor {'gitlab::end':
     require => Class['gitlab::config']
